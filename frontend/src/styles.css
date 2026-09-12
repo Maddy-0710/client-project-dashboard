@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #f5f6f8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f5f6f8;
+  color: #222;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+/* =========================
+   LOGIN
+   ========================= */
+
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #f5f6f8;
+}
+
+.login form {
+  width: 100%;
+  max-width: 390px;
+  padding: 34px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.login h1 {
+  margin: 0 0 8px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+}
+
+.login p {
+  margin: 0 0 26px;
+  color: #666;
+  font-size: 14px;
+}
+
+.login input {
+  display: block;
+  width: 100%;
+  height: 42px;
+  margin-bottom: 14px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #222;
+  outline: none;
+}
+
+.login input:focus {
+  border-color: #777;
+}
+
+.login button {
+  width: 100%;
+  height: 42px;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background: #333;
+}
+
+.login small {
+  display: block;
+  margin-top: 12px;
+  color: #b42318;
+  font-size: 13px;
+}
+
+/* =========================
+   APP
+   ========================= */
+
+.app {
+  min-height: 100vh;
+  background: #f5f6f8;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 42px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+header h2 {
+  margin: 0 0 4px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #222;
+}
+
+header span {
+  font-size: 13px;
+  color: #777;
+}
+
+header button {
+  padding: 9px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: #f3f3f3;
+}
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+
+/* =========================
+   STATS
+   ========================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.stats > div {
+  min-height: 92px;
+  padding: 20px 22px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.stats b {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #222;
+}
+
+.stats span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+}
+
+/* =========================
+   PANELS
+   ========================= */
+
+.panel {
+  margin-bottom: 22px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.panel h3 {
+  margin: 0 0 18px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* =========================
+   FILTERS
+   ========================= */
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.filters select {
+  min-width: 150px;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  outline: none;
+}
+
+.filters select:focus {
+  border-color: #777;
+}
+
+/* =========================
+   TASK GRID
+   ========================= */
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.task {
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.task:hover {
+  border-color: #bbb;
+}
+
+.task h4 {
+  margin: 12px 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.task p {
+  margin: 7px 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #666;
+}
+
+.task select {
+  width: 100%;
+  height: 36px;
+  margin-top: 12px;
+  padding: 0 9px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+}
+
+/* =========================
+   PRIORITY
+   ========================= */
+
+.pill {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  background: #f7f7f7;
+  color: #555;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #f7f7f7;
+  color: #555;
+  font-size: 12px;
+}
+
+/* =========================
+   LIVE ACTIVITY
+   ========================= */
+
+.panel > p {
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.panel > p:last-child {
+  border-bottom: 0;
+}
+
+.panel > p b {
+  color: #333;
+  font-weight: 600;
+}
+
+/* =========================
+   LOADING
+   ========================= */
+
+.loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f6f8;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .task-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    height: auto;
+    min-height: 70px;
+    padding: 14px 20px;
+  }
+
+  main {
+    width: calc(100% - 28px);
+    padding-top: 20px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .task-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .login {
+    padding: 16px;
+  }
+
+  .login form {
+    padding: 24px;
+  }
+
+  header {
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
