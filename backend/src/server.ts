@@ -76,8 +76,9 @@ app.use(
 // =========================================================
 
 app.get("/api/health", (_req, res) => {
-  res.json({
+  res.status(200).json({
     ok: true,
+    service: "client-project-dashboard",
   });
 });
 
